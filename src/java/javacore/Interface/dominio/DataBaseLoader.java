@@ -1,0 +1,23 @@
+package aprendizado.meu.java.javacore.Interface.dominio;
+
+public class DataBaseLoader implements DataLoader, DataRemover {
+    //private -> default -> protected -> public
+    @Override
+    public void load() {
+        System.out.println("Loading data from Database...");
+    }
+
+    @Override
+    public void remove() {
+        System.out.println("Removendo dados do banco de dados");
+    }
+
+    @Override
+    public void checkpermission() {
+        System.out.println("Checando permissoes do banco de dados");
+    }
+
+    public static void retrieveMaxDataSize(){
+        System.out.println("Dentro do retrieveMaxDataSize na classe Databaseloader");
+    }
+}
